@@ -10,5 +10,6 @@ Thanks https://github.com/Juanpe/Swift-VIPER-Module
 
 ## How to use
 
-1. Right click on directory `New file...`
-2. Choose `Application` -> `MVVM`
+1. Add to project 'CoordinatorProtocol' & 'StoryboardInitializable'
+2. Right click on directory `New file...`
+3. Choose `Application` -> `MVVM`
