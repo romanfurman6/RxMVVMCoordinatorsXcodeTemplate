@@ -15,11 +15,23 @@ import RxSwift
 import RxCocoa
 
 final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, StoryboardInitializable {
+    
+    // MARK: - Public Properties
 
-    var viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModel!
+    var viewModel: ___FILEBASENAMEASIDENTIFIER___ViewModelProtocol!
+    
+    // MARK: - Outlets
+    
+    // MARK: - Private Properties
+    
+    // MARK: - View Lifecycle
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    // MARK: - Binding
+    
+    func bindViewModel() {}
 
 }
