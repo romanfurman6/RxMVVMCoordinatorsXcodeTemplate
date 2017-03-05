@@ -1,9 +1,9 @@
 //
-//  install.swift
+//  uninstall.swift
 //  InstallMVVMTemplate
 //
-//  Created by Juanpe Catalán on 17/02/2017.
-//  Copyright © 2017 Juanpe Catalán. All rights reserved.
+//  Created by Roman Dmitrieivich on 17/02/17.
+//  Copyright © 2017 Roman Dmitrieivich. All rights reserved.
 //
 
 import Foundation
@@ -17,19 +17,19 @@ func printInConsole(_ message:Any){
     print("====================================")
 }
 
-func moveTemplate(){
-
+func removeTemplate(){
+    
     let fileManager = FileManager.default
     
     do {
-        if !fileManager.fileExists(atPath:"\(destinationPath)/\(templateName)"){
-        
-            try fileManager.copyItem(atPath: templateName, toPath: "\(destinationPath)/\(templateName)")
+        if fileManager.fileExists(atPath:"\(destinationPath)/\(templateName)"){
             
-            printInConsole("Template installed succesfully. Enjoy it")
+            try fileManager.removeItem(atPath: "\(destinationPath)/\(templateName)")
+            
+            printInConsole("Template uninstalled succesfully.")
             
         }else{
-            printInConsole("Template already exists")
+            printInConsole("Need to install firstly try 'sudo swift install.swift'")
         }
     }
     catch let error as NSError {
@@ -37,8 +37,4 @@ func moveTemplate(){
     }
 }
 
-moveTemplate()
-
-
-
-
+removeTemplate()
