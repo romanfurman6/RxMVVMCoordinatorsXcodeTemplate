@@ -23,7 +23,9 @@ final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, Stor
     // MARK: - Outlets
     
     // MARK: - Private Properties
-    
+
+    private let disposeBag = DisposeBag()
+
     // MARK: - View Lifecycle
 	
 	override func viewDidLoad() {

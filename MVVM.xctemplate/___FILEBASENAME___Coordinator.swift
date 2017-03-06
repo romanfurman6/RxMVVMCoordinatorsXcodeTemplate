@@ -21,7 +21,8 @@ class ___FILEBASENAMEASIDENTIFIER___Coordinator: CoordinatorProtocol {
     
     private var finishedSubject = PublishSubject<Void>()
     private let navigationController: UINavigationController
-    
+    private let disposeBag = DisposeBag()
+
     // MARK: - Lifecycle
     
     init(navigationController: UINavigationController) {
