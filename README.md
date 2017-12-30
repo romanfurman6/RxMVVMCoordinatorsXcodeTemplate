@@ -1,15 +1,18 @@
-# Rx + MVVM + Coordinators Xcode Template
+# Rx-MVVM-C Xcode Template
 
-## How to install
+## How to install/uninstall
 
-1.
+### Clone
 ```bash
 git clone https://github.com/romanfurman6/RxMVVMCoordinatorsXcodeTemplate.git
 ```
-2. Go to folder with template
-3.
+### Install
 ```bash
 sudo swift install.swift
+```
+### Uninstall
+```bash
+sudo swift uninstall.swift
 ```
 
 ## How to use
@@ -19,6 +22,5 @@ sudo swift install.swift
 3. Choose `File Templates` -> `MVVM`
 
 ## How to uninstall
-```bash
-sudo swift uninstall.swift
-```
+
+
