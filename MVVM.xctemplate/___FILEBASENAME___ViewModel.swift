@@ -6,16 +6,15 @@
 //  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-
-import UIKit
+import Foundation
 import RxSwift
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewModelProtocol {
-    
+protocol ___VARIABLE_moduleName___ViewModelProtocol {
+  
 }
 
-class ___FILEBASENAMEASIDENTIFIER___ViewModel: ___FILEBASENAMEASIDENTIFIER___ViewModelProtocol {
-
-    init() {}
-
+class ___VARIABLE_moduleName___ViewModel: ___VARIABLE_moduleName___ViewModelProtocol {
+  
+  init() {}
+  
 }

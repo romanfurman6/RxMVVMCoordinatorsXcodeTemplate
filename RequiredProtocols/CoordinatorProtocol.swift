@@ -11,5 +11,4 @@ import RxSwift
 protocol CoordinatorProtocol {
     var finished: Observable<Void> { get }
     func start()
-    func finish()
 }
